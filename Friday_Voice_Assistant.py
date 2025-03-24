@@ -36,7 +36,7 @@ def takeCommand():
     with sr.Microphone() as mic:
         print("Listening...")
         r.pause_threshold = 0.9 # seconds of non-speaking audio before a phrase is considered complete
-        r.energy_threshold = 200  # minimum audio energy to consider for recording
+        r.energy_threshold = 900  # minimum audio energy to consider for recording
         audio = r.listen(mic)
 
     try:
